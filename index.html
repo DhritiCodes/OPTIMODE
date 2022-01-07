@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>New tab</title>
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div class="container">
+        <div id="header">
+            <div class="search">
+                <form action="https://www.google.com/search" method="GET">
+                    <input type="text" name="q" id="searchBar" target="_blank" placeholder="Google here">
+                </form>
+            </div>
+            <div class="menu" id="Icon">
+                <div class="menu-icons">
+                    <div class="pomodoro">
+                        <button><a href=#><i class="far fa-clock"></i><br>Pomodoro</button></a>
+                    </div>
+                    <div class="blockurl">
+                        <button><a href=#><i class="fas fa-hourglass-half"></i><br>Focus-mode</button></a>
+                    </div>
+                    <div class="bookmarkurl">
+                        <button><a href=#><i class="far fa-bookmark"></i></i><br>Bookmark</button></a>
+                    </div>
+                </div>
+                <!-- <button><a href="google.com"><i class="fas fa-bars"></i><br>Menu</button></a> -->
+            </div>
+        </div>
+        <div id="center">
+            <div id="location">
+                <div class="weather">
+                    <div class="icon"></div>
+                    <div class="temp_desc"></div>
+                </div>
+            </div>
+            <div class="time"></div>
+            <div class="day"></div>
+            <div class="greeting">
+                <span class="greet"></span>,
+                <span class="username">Dhriti</span>!
+                <!-- <div class="hide">I am shown when someone hovers over the div above.</div> -->
+            </div>
+            <div class="target">
+                <input type="text" id="targetBox" placeholder="What's your goal for today?" />
+            </div>
+            <div class="quote"></div>
+
+        </div>
+        <div id="footer">
+            <div id="Icon" class="news">
+                <button><a href="https://news.yahoo.com/"><i class="fa-solid fa-newspaper" ></i><br>News</button>
+            </div>
+            <div id="Icon" class="todo">
+                <button><i class="fas fa-tasks"></i><br>Todo</button></div>
+        </div>
+    </div>
+
+    <!-- <script src="jq.js"></script> -->
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+    <script src="time.js"></script>
+    <script src="target.js"></script>
+    <script src="quote.js"></script>
+    <script src="test.js"></script>
+</body>
+
+</html>
