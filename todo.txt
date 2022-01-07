@@ -4,9 +4,8 @@ To-Do : (output screen)
 7. input-checkbox animation
 
 RESOLVE ❌❌
-1. name change Validation
+1. name change Validation dnt click cancel or use modal
 2. goal for today - getting changed only once
-3. quote length - limit
 
 
 
