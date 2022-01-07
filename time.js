@@ -53,13 +53,13 @@ greetName.addEventListener("dblclick", function(e) {
     var name = prompt("Enter your name : ");
     console.log(name);
 
-    if (name = "") {
-        alert("Name cant be empty!!")
-        prompt("Enter name Again : ")
-        greetName.textContent = name;
-    } else {
-        greetName.textContent = name;
-    }
+    // if (name = "") {
+    //     alert("Name cant be empty!!")
+    //     prompt("Enter name Again : ")
+    //     greetName.textContent = name;
+    // } else {
+    //     greetName.textContent = name;
+    // }
 
 })
 
