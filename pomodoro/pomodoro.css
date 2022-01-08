@@ -1,0 +1,29 @@
+/* change modal dimensions and position */
+
+
+/* body {
+    box-sizing: border-box;
+    overflow: hidden;
+} */
+
+.pmdr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    background-color: rgba(173, 255, 244, 0.301);
+    border: 5px solid rgba(167, 255, 243, 0.596);
+    /* width: 650px;
+    height: 350px; */
+    height: auto;
+    width: 650px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.pmdr-body {
+    display: flex;
+    justify-content: space-around;
+}
