@@ -18,6 +18,8 @@
     <div id="bg"></div>
     <div class="container">
         <div id="header">
+         
+
             <div class="search">
                 <form action="https://www.google.com/search" method="GET">
                     <input type="text" name="q" id="searchBar" target="_blank" placeholder="Google here">
@@ -41,10 +43,12 @@
         <div id="center">
             <div id="location">
                 <div class="weather">
+                   
                     <div class="icon"></div>
                     <div class="temp_desc"></div>
                 </div>
             </div>
+            <div id="openweathermap-widget-21" class="weeklyweather"></div>
             <div class="time"></div>
             <div class="day"></div>
             <div class="greeting">
@@ -68,12 +72,14 @@
     </div>
 
     <!-- <script src="jq.js"></script> -->
-    <script src="bg.js"></script>
+    
     <script src="weather.js"></script>
     <script src="time.js"></script>
     <script src="target.js"></script>
     <script src="quote.js"></script>
-    <script src="test.js"></script>
+    <script src="bg.js"></script>
+    <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+    <!-- <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 11,cityid: '1259229',appid: 'ad9ec9565784ee70e0cdfd30fa06971a',units: 'metric',containerid: 'openweathermap-widget-11',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script> -->
 </body>
 
 </html>
