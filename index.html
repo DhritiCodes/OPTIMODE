@@ -11,15 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- for task list masterilase -->
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    /> 
     <title>New tab</title>
 </head>
 
 <body>
     <div id="bg"></div>
-    <div class="container">
+    <div class="main-container">
         <div id="header">
-         
-
             <div class="search">
                 <form action="https://www.google.com/search" method="GET">
                     <input type="text" name="q" id="searchBar" target="_blank" placeholder="Google here">
@@ -42,8 +47,7 @@
         </div>
         <div id="center">
             <div id="location">
-                <div class="weather">
-                   
+                <div class="weather">  
                     <div class="icon"></div>
                     <div class="temp_desc"></div>
                 </div>
@@ -60,26 +64,60 @@
                 <input type="text" id="targetBox" placeholder="What's your goal for today?" />
             </div>
             <div class="quote"></div>
-
         </div>
         <div id="footer">
             <div id="Icon" class="news">
-                <button><a href="https://news.yahoo.com/"><i class="fa-solid fa-newspaper" ></i><br>News</button>
+                <!-- <button><a href="#"><i class="fa-solid fa-newspaper" ></i><br>News</button> -->
             </div>
-            <div id="Icon" class="todo">
-                <button><i class="fas fa-tasks"></i><br>Todo</button></div>
+            <div id="Icon" class="todo"> 
+                <button id="todo-icon"><i class="fas fa-tasks"></i><br>Todo</button>
+            </div>
         </div>
     </div>
+        <!-- <div class="container"> -->
+         <div class="row hidden" id="todo-list">
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <span class="card-title">Task List</span>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" id="task">
+                                    <label for="task">New Task</label>
+                                </div>
+                                <input type="submit" value="Add Task" class="btn">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5 id="task-title">Tasks</h5>
+                        <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter">
+                            <label for="filter">Filter Tasks</label>
+                        </div>
+                        <ul class="collection"></ul>
+                        <a href="#" class="clear-tasks btn black">Clear tasks</a>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+   
+    
 
-    <!-- <script src="jq.js"></script> -->
     
     <script src="weather.js"></script>
     <script src="time.js"></script>
     <script src="target.js"></script>
     <script src="quote.js"></script>
     <script src="bg.js"></script>
+    <script src="todo.js"></script>
     <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
-    <!-- <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 11,cityid: '1259229',appid: 'ad9ec9565784ee70e0cdfd30fa06971a',units: 'metric',containerid: 'openweathermap-widget-11',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+   
 </body>
 
 </html>
